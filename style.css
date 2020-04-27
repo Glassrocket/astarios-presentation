@@ -1,0 +1,321 @@
+
+/* ========================================= 
+************** GLOBAL STYLE ****************
+===========================================*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #232428;
+    overflow: hidden;
+}
+
+.main-wrapper {
+    position: relative;
+width: 100%;
+height: 100%;
+
+    background-color: #232428;
+    padding: 24px;
+    transition: all 1s;
+}
+
+
+
+/* ========================================= 
+************** FLEX POSITION ****************
+===========================================*/
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ========================================= 
+************** SLIDE CONTAINER **************
+===========================================*/
+
+.slide-conteiner {
+    position: absolute;
+    top: 70px;
+    width: 80%;
+    max-width: 840px;
+    min-width: 312px;
+    height: 550px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #353A40 0%, #16171B 100%);
+    box-shadow: -15px -15px 30px rgba(38, 46, 50, 0.5), 15px 15px 30px rgba(16, 16, 18, 0.5);
+    padding: 32px;
+  
+}
+
+
+/* HEADER--------------------------------------- */
+.header {
+    width: 100%;
+}
+ .logo  {
+     width: 180px;
+ }
+
+/* INFO CONTAINER--------------------------------- */
+.info-container {
+    width: 100%;
+    height: 450px
+}
+
+/* FOOTER --------------------------------------- */
+.footer {
+    width: 100%;
+}
+.footer-block {
+    width: 100%;
+    ;
+}
+
+
+/* ========================================= 
+************** BUTTONS ********************
+===========================================*/
+
+ /* NEXT BNT------------------------------------- */
+
+ .next-bnt {
+    justify-self: flex-end;
+    position: relative;
+    width: 55.12px;
+    height: 55.12px;
+    padding: 0;
+    margin: 0;
+    
+    background: linear-gradient(318.21deg, #11A8FD 14.05%, #0081C9 85.29%);
+    box-shadow: 7px 10.5px 28px #2F393D, -7px -10.5px 28px #121212;
+border-radius: 70px;
+transform: rotate(-180deg);
+ }
+
+ .button-inner-2 {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    margin: 0;
+
+   background: linear-gradient(318.21deg, #11A8FD 14.05%, #0081C9 85.29%);
+box-shadow: 7px 10.5px 28px #2F393D, -7px -10.5px 28px #121212;
+border-radius: 70px;
+
+ }
+
+ .button-inner-3 {
+    width: 52.5px;
+    height: 52.5px;
+    padding: 0;
+    margin: 0;
+    
+    background: linear-gradient(320.66deg, #005EA3 14.75%, #11A8FD 84.81%);
+border: 0.7px solid #058DD9;
+box-sizing: border-box;
+border-radius: 70px;
+}
+
+.button-inner-4 {
+    width: 52.5px;
+    height: 52.5px;
+    padding: 0;
+    margin: 0;
+    
+    background: linear-gradient(320.66deg, #016BB8 14.75%, #11A8FD 84.81%);
+    filter: blur(0.7px);
+    border-radius: 70px;
+}
+.btn-text {
+    width: 62px;
+    height: 62px;
+border-radius: 50px;
+    position: absolute;
+    transform: rotate(180deg);
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.next-bnt:focus {
+    outline: none;
+}
+.btn-text:hover {
+    background-color: rgba(0, 36, 61, 0.5);
+    transition: 0.5s;
+}
+
+ /* BACK BNT------------------------------------- */
+
+.back-bnt{
+    padding: 0;
+    margin-right: 48px;
+    width: 47.09px;
+    height: 47.09px;
+    
+    background: linear-gradient(318.21deg, #1D2328 14.05%, #131314 85.29%);
+    box-shadow: 7px 7px 30px #262E32, -14px -14px 40px rgba(16, 16, 18, 0.75);
+    border-radius: 100px;
+    transform: rotate(-180deg);
+    border: none;
+}
+    
+ .back-button-inner-2 {
+    width: 48px;
+height: 48px;
+
+background: linear-gradient(318.21deg, #1D2328 14.05%, #131314 85.29%);
+border-radius: 1000px;
+ }
+
+ .back-button-inner-3 {
+    width: 40px;
+    height: 40px;
+
+    background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
+    box-shadow: inset 0px 0px 2.77785px rgba(63, 63, 63, 0.45);
+    border-radius: 92.5949px; 
+ }
+ .back-button-inner-4 {
+    width: 40px;
+    height: 40px;
+
+    background: linear-gradient(320.66deg, #2F353A 14.75%, #1C1F22 84.81%);
+    filter: blur(0.925949px);
+    border-radius: 92.5949px;
+}
+.back-btn-text {
+    width: 50px;
+    height: 50px;
+border-radius: 50px;
+position: absolute;
+transform: rotate(180deg);
+transition: 0.5s;
+}
+
+.back-bnt:focus {
+    outline: none;
+}
+.back-btn-text:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+/* ========================================= 
+************** NAVIGATION ******************
+===========================================*/
+
+.nav-item {
+    width: 20px;
+    height: 20px;
+    
+    background: linear-gradient(320.66deg, #141515 14.75%, #2E3236 84.81%);
+border: 3px solid rgb(27, 28, 31);
+box-sizing: border-box;
+box-shadow: 4.57143px 6.85714px 22.8571px rgba(0, 0, 0, 0.35);
+border-radius: 34.2857px;
+z-index: 10;
+}
+.nav-item-inner {
+    width: 8px;
+    height: 8px;
+    
+    background: linear-gradient(320.66deg, #0172BE 14.75%, #0F9BEE 84.81%);
+border-radius: 293.478px;
+z-index: 10;
+}
+
+.nav-item:hover {
+    border: 2px solid rgba(3, 47, 114, 0.1);
+    background: linear-gradient(320.66deg, #011f3f 14.75%, rgb(0, 56, 111) 84.81%);
+    box-shadow: 0 0 20px rgba(2, 102, 208, 0.5);
+border-radius: 34.2857px;
+}
+
+/* ---------------NAV 2------------------ */
+
+.nav-row {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    z-index: 20;
+    width: 77vw;  
+    max-width: 840px;
+    min-width: 312px; 
+}
+
+.nav-bar-outer {
+    min-width: 100%;
+    height: 6px;
+    
+    background: #202226;
+    box-shadow: inset -5.86957px -5.86957px 5.86957px rgb(29, 30, 31), inset 0px 11.7391px 11.7391px rgba(0, 0, 0, 0.75);
+    border-radius: 293.478px;
+}
+
+.nav-bar-inner {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 48.67%, rgba(255, 255, 255, 0.04) 59.86%), linear-gradient(88.84deg, #016BB8 2.65%, #0782DB 30.1%, #0F9CEB 59.17%, #11A8FD 101.95%);
+border-radius: 293.478px;
+opacity: 0.7;
+transition: 0.7s;
+}
+
+
+
+/* ========================================= 
+************** SLIDER ANIMATION *************
+===========================================*/
+
+.transition-1 {
+
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.slide-conteiner-hidden {
+    opacity: 0;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    }
+    
+.slide-conteiner-show {
+    opacity: 1;
+    transition: 1s;
+    z-index: 3;
+    }
+
+
